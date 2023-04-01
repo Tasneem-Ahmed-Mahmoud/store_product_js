@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="shadow w-75 m-auto my-5 p-5">
+
+  <div class="mb-3">
+    <label for="productName" class="form-label">Product Name</label>
+    <input type="text" class="form-control " id="productName" placeholder="" name="productName">
+    <div class="alert alert-danger d-none">
+      <strong>Please start with capital letter...</strong>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="productCategory" class="form-label">Product Category</label>
+    <input type="text" class="form-control" id="productCategory" placeholder="" name="productCategory">
+  </div>
+  <div class="mb-3">
+    <label for="productPrice" class="form-label">Product Price</label>
+    <input type="number" class="form-control" id="productPrice" placeholder="" name="productPrice">
+  </div>
+  <div class="mb-3">
+    <label for="productDescription" class="form-label">Product Description</label>
+    <textarea name="" id="productDescription"   name="productDescription "  class="form-control"></textarea>
+
+  </div>
+
+  <button type="button " class="btn btn-dark" id="addBtn">Add product</button>
+  <button type="button " class="btn btn-dark d-none" id="updateBtn">update product</button>
+</div>
+
+
+<input type="text" id="search" class="form-control w-50 m-auto"  placeholder="search.....">
+
+
+
+    <table class="table  w-75 m-auto my-5 text-center">
+        <thead class="table-dark">
+          <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Update</th>
+            <th>Delete</th>
+
+          </tr>
+        </thead>
+        <tbody id="data">
+         
+        </tbody>
+      </table>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
